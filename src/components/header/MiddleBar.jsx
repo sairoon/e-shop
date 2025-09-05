@@ -3,14 +3,15 @@ import Container from "../layouts/Container";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { PiUser } from "react-icons/pi";
 import { IoSearchOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const MiddleBar = () => {
   return (
     <Container>
       <div className="flex justify-between items-center my-6">
-        <div className="font-Poppins text-[32px] font-bold text-black">
+        <Link to="/" className="font-Poppins text-[32px] font-bold text-black">
           e-shop<span className="text-[#FF624C]">.</span>
-        </div>
+        </Link>
         <div className="flex justify-between items-center font-Montserrat">
           <div className="relative">
             <input
@@ -20,13 +21,13 @@ const MiddleBar = () => {
             />
             <IoSearchOutline className="absolute top-5 right-20 text-2xl"/>
           </div>
-          <div className="flex items-center gap-6">
+          <Link to="/cart" className="flex items-center gap-6">
             <MdOutlineShoppingCart className="text-2xl" />
             <div className="font-normal mr-10">
               <h6 className=" text-base capitalize">cart</h6>
               <span className="font-bold">$ 150,00</span>
             </div>
-          </div>
+          </Link>
           <div className="flex items-center gap-6 before:w-[1px] before:h-8 before:bg-black before:opacity-25 before:block before:mr-6">
             <PiUser className="text-2xl" />
             <div className="font-normal mr-10">

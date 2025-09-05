@@ -13,12 +13,12 @@ const BottomBar = () => {
               <RxHamburgerMenu className="text-2xl" />
               all categories
             </div>
-            <Link to="#">products</Link>
-            <Link to="#">blog</Link>
-            <Link to="#">contact</Link>
+            <Link to="/product-list">products</Link>
+            <Link to="/blog">blog</Link>
+            <Link to="/contact">contact</Link>
           </div>
           <div className="flex justify-end items-center gap-20">
-            <Link to="#" className="uppercase">limited sale</Link>
+            <Link to="#" className="uppercase">limited sale 👋🏻</Link>
             <Link to="#" className="capitalize">best seller</Link>
             <Link to="#" className="capitalize">new arrivals</Link>
           </div>
