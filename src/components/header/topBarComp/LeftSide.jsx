@@ -16,7 +16,7 @@ const LeftSide = () => {
       </Link>
       <Link
         to="tel:1234567890"
-        className="flex items-center gap-2 before:w-[1px] before:h-8 before:bg-black before:opacity-25 before:block before:mr-6"
+        className="flex items-center gap-2 before:w-[1px] before:h-8 before:bg-secondary/25 before:block before:mr-6"
       >
         <FiPhone />
         (123) 456-7890

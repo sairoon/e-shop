@@ -5,9 +5,9 @@ import RightSide from './topBarComp/RightSide'
 
 const TopBar = () => {
   return (
-    <div className="border-b border-solid border-[#cbcbcb] py-5">
+    <div className="border-b border-solid border-secondary/25 py-5">
       <Container>
-        <div className="flex justify-between items-center font-Montserrat text-sm font-normal">
+        <div className="flex justify-between text-secondary items-center font-Montserrat text-sm font-normal">
           <LeftSide />
           <RightSide />
         </div>

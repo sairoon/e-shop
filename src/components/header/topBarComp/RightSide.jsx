@@ -29,8 +29,8 @@ const RightSide = () => {
 
   return (
     <div className="flex justify-end items-center gap-2">
-      <div className="uppercase">usd</div>
-      <div className="flex items-center before:w-[1px] before:h-8 before:bg-black before:opacity-25 before:block before:mx-6 after:w-[1px] after:h-8 after:bg-black after:opacity-25 after:block after:mx-6">
+      <div className="uppercase text-sm font-normal">usd</div>
+      <div className="flex items-center before:w-[1px] before:h-8 before:bg-secondary/25 before:block before:mx-6 after:w-[1px] after:h-8 after:bg-secondary/25 after:block after:mx-6">
         {/* <div className="flex items-center">
           <img
             src="https://flagcdn.com/w20/gb.png"
@@ -44,15 +44,23 @@ const RightSide = () => {
           name="country"
           className="outline-none hidden"
           value={selectedCountry?.value || ""}
-          onChange={(e)=>{const country = countries.find((item) => item.code === e.target.value); setSelectedCountry(country)}}
+          onChange={(e) => {
+            const country = countries.find(
+              (item) => item.code === e.target.value
+            );
+            setSelectedCountry(country);
+          }}
         >
-          {countries.map((country) => (
-            <option value={country.code}>{country.name}</option>
+          {countries.map((country, index) => (
+            <option key={index} value={country.code}>
+              {country.name}
+            </option>
           ))}
         </select>
       </div>
       <div className="flex items-center gap-2 scale-110">
-        <FaFacebookF /> <FaTwitter />
+        <FaFacebookF />
+        <FaTwitter />
         <FaInstagram />
       </div>
     </div>

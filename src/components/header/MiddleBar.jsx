@@ -8,14 +8,14 @@ import { Link } from "react-router-dom";
 const MiddleBar = () => {
   return (
     <Container>
-      <div className="flex justify-between items-center my-6">
-        <Link to="/" className="font-Poppins text-[32px] font-bold text-black">
-          e-shop<span className="text-[#FF624C]">.</span>
+      <div className="flex justify-between items-center my-6 text-secondary">
+        <Link to="/" className="font-Poppins text-[32px] font-bold">
+          e-shop<span className="text-primary">.</span>
         </Link>
         <div className="flex justify-between items-center font-Montserrat">
           <div className="relative">
             <input
-              className="border rounded-[10px] w-[332px] pl-6 py-[18px] mr-12"
+              className="border border-solid border-secondary/50 placeholder:opacity-75 placeholder:text-secondary  rounded-[10px] w-[332px] pl-6 py-[18px] mr-12"
               placeholder="Search Products ..."
               type="search"
             />

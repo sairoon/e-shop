@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const BottomBar = () => {
   return (
-    <div className="bg-[#FF624C] font-Montserrat text-base text-white font-bold py-6">
+    <div className="bg-primary font-Montserrat text-base text-white font-bold py-6">
       <Container>
         <div className="flex justify-between items-center">
           <div className="flex justify-start items-center gap-20 capitalize">
@@ -18,9 +18,15 @@ const BottomBar = () => {
             <Link to="/contact">contact</Link>
           </div>
           <div className="flex justify-end items-center gap-20">
-            <Link to="#" className="uppercase">limited sale 👋🏻</Link>
-            <Link to="#" className="capitalize">best seller</Link>
-            <Link to="#" className="capitalize">new arrivals</Link>
+            <Link to="#" className="uppercase">
+              limited sale 👋🏻
+            </Link>
+            <Link to="#" className="capitalize">
+              best seller
+            </Link>
+            <Link to="#" className="capitalize">
+              new arrivals
+            </Link>
           </div>
         </div>
       </Container>
