@@ -15,11 +15,11 @@ const MiddleBar = () => {
         <div className="flex justify-between items-center font-Montserrat">
           <div className="relative">
             <input
-              className="border border-solid border-secondary/50 placeholder:opacity-75 placeholder:text-secondary  rounded-[10px] w-[332px] pl-6 py-[18px] mr-12"
+              className="border border-solid border-secondary/50 placeholder:text-secondary/75 rounded-[10px] w-[332px] pl-6 py-[18px] mr-12"
               placeholder="Search Products ..."
               type="search"
             />
-            <IoSearchOutline className="absolute top-5 right-20 text-2xl"/>
+            <IoSearchOutline className="absolute top-5 right-20 text-2xl" />
           </div>
           <Link to="/cart" className="flex items-center gap-6">
             <MdOutlineShoppingCart className="text-2xl" />
@@ -28,7 +28,7 @@ const MiddleBar = () => {
               <span className="font-bold">$ 150,00</span>
             </div>
           </Link>
-          <div className="flex items-center gap-6 before:w-[1px] before:h-8 before:bg-black before:opacity-25 before:block before:mr-6">
+          <div className="flex items-center gap-6 before:w-[1px] before:h-8 before:bg-secondary/25 before:block before:mr-6">
             <PiUser className="text-2xl" />
             <div className="font-normal mr-10">
               <h6 className=" text-base capitalize">user</h6>
